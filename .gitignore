@@ -1,0 +1,11 @@
+# Build outputs and local dependencies
+**/target/
+**/node_modules/
+**/dist/
+**/build/
+**/.idea/
+**/.vscode/
+*.log
+.env
+.env.*
+!.env.example

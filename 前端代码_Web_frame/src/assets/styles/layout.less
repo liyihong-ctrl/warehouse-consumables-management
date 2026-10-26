@@ -1,0 +1,183 @@
+.custom-home-container {
+    height: 100%;
+    overflow: hidden;
+
+    .custom-header-container {
+        background-color: #394a6d;
+
+        .custom-header-left {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            height: 60px;
+
+            .custom-logo {
+                margin-right: 15px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .custom-title {
+                margin: 0;
+                font-size: 20px;
+                color: #ffffff;
+            }
+        }
+
+        .custom-header-right {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 15px;
+            height: 60px;
+
+            .custom-switching {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                width: 250px;
+                height: 60px;
+            }
+
+            .custom-userinfo {
+                margin-right: 20px;
+                color: aliceblue;
+
+                &:hover {
+                    cursor: pointer;
+                    color: darkgray;
+                    text-decoration-line: underline;
+                }
+
+                .custom-icon-userinfo {
+                    width: 30px;
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+
+            .custom-warning,
+            .custom-setting {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                height: 60px;
+                padding: 0 5px;
+            }
+
+            .custom-icon-warning,
+            .custom-icon-setting {
+                width: 30px;
+                font-size: 20px;
+                text-align: center;
+                color: aliceblue;
+                cursor: pointer;
+
+                &:hover {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .custom-body-container {
+        position: absolute;
+        z-index: 2;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        min-width: 1250px;
+        height: calc(100% - 60px);
+        overflow-x: hidden;
+
+        .custom-aside-container {
+            background-color: #3c9d9b;
+            font-size: 17px;
+
+            .el-menu {
+                border-right: 0;
+            }
+
+            & ul li {
+                font-size: 14px !important;
+            }
+        }
+
+        .custom-main-container {
+            hr {
+                margin: 15px 0;
+                border: #ebeef5 0.5px solid;
+            }
+
+            .custom-text-right {
+                text-align: right;
+            }
+
+            .operation-container {
+                display: flex;
+                align-items: center;
+                margin-bottom: -15px;
+                padding-left: 20px;
+                padding-right: 20px;
+
+                .search-container {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+
+                    .search-btn {
+                        margin-left: 5px;
+                    }
+                }
+
+                .btn-group {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-end;
+                    align-items: center;
+                    height: 45px;
+
+                    .custom-btn-dropdown {
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .custom-el-container {
+                padding: 0;
+                height: calc(100% - 45px);
+
+                .custom-el-main {
+                    height: 100%;
+
+                    .el-scrollbar__wrap {
+                        overflow-x: hidden;
+                    }
+                }
+            }
+
+            .page-container {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+                align-items: center;
+                margin-top: -20px;
+                width: 100%;
+                height: 45px;
+            }
+        }
+
+        .custom-footer-container {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            font-size: 12px;
+            color: #606266;
+        }
+    }
+}

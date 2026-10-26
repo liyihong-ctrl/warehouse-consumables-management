@@ -1,0 +1,27 @@
+原因： 查询出的数据包过大，
+默认情况下mysql 的字段容量不够装，所以抛出此异常
+
+解决办法：
+
+
+查看mysql配置信息：mysql -u root -p
+
+
+控制台查询一下：SHOW VARIABLES LIKE '%max_allowed_packet%';
+
+
+mysql> SHOW VARIABLES LIKE '%max_allowed_packet%';
+
+
+默认情况下，最大允许数据包的容量是1M ,需要修改更大一点。20M
+
+
+2.到mysql 的安装目录下找到 my.cnf文件中，新增 max_allowed_packet = 20M
+
+
+3重启：systemctl restart mysqld
+
+
+4控制台查询一下：SHOW VARIABLES LIKE '%max_allowed_packet%';
+
+mysql> SHOW VARIABLES LIKE '%max_allowed_packet%';

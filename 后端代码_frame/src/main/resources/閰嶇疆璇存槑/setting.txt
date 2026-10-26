@@ -1,0 +1,6 @@
+1. 关于图片上传至服务器并返回URL的配置
+   需求：图片上传至服务器、服务器将其保存在本地、返回可访问URL
+   配置：在frame.server.constant.FileUploadSettingConstant中配置服务器IP地址(包含tomcat启动端口)、指定盘、指定文件夹
+         在tomcat中配置虚拟映射路径，使得可通过tomcat访问静态资源（详情查看"关于图片上传至服务器并返回URL配置.png"）
+         在启动项目时同时需要启动tomcat。
+         至此，可正常访问图片

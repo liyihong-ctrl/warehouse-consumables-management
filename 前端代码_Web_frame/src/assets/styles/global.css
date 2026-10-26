@@ -1,0 +1,18 @@
+/*全局样式*/
+html,
+body {
+    min-width: 1250px;
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+/* 文字居右显示 */
+.custom-text-right {
+    text-align: right;
+}
+
+/* 文字超出折行 */
+.custom-text-breaks {
+    word-wrap: break-word;
+    word-break: break-all;
+}
